@@ -36,9 +36,9 @@
 
         <div class="col-md-6"> 
             <div class="thumbnail">
-
+				<!--create loop-->
 					<img class="poster" ng-src="{{ movies[0].posters[0] }}"/>
-					<div class="imageInfo">{{ movies[0].posterindex }}</div>
+					<div class="imageInfo">{{ movies[0].posterindex + " of " }} {{ movies[0].posters.length }}</div>
 					
 					<p class="title">{{ movies[0].title }} ({{ movies[0].country }})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i>{{ movies[0].iscore }}</p>
@@ -54,14 +54,7 @@
             </div> 
         </div>
 		
-		<!--loop through movie list
-		<div ng-controller="HomeController">
-			<div ng-repeat="m in movies">
-				<span></span>
-			</div>
-		</div>
-		-->
-		
+
       </div>
     </div>
 
