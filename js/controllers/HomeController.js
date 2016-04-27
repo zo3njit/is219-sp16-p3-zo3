@@ -101,17 +101,32 @@ app.controller('HomeController', ['$scope', function($scope) {
 	$scope.owner = "Zarni";
 	$scope.github = "https://github.com/zo3njit/is219-sp16-p3-zo3.git";
 	
-	
-	
-	
-	
-	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
 	
 	
 	
+	/* ADD FUNCTIONS FOR STEP 7 HERE */
+	//like function
+	$scope.like = function(index){
+		$scope.movies[index].likes += 1;
+	};
 	
+	//dislike function
+	$scope.dislike = function(index){
+		$scope.movies[index].dislikes += 1;
+	};
 	
+	//posterClick function
+	$scope.posterClick = function(index){
+		//$scope.movies{index].posterindex += 1;
+	};
+	
+	//timeText function
+	$scope.timeText = function(minutes){
+		$scope.hours = Math.floor(minutes / 60);
+		$scope.mins = minutes % 60;
+		return Scope.formatted = $scope.hours + "H " + $scope.mins + "m";
+	};
 	
 	
 	
