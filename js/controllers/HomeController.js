@@ -118,7 +118,13 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	//posterClick function
 	$scope.posterClick = function(index){
+		
+		if($scope.movies[index].posterindex + 1 < $scope.movies[index].posters.length){
 			$scope.movies[index].posterindex += 1;
+		}else if($scope.movies[index].posterindex + 1 == $scope.movies[index].posters.length){
+			$scope.movies[index].posterindex = 0;
+			
+		}
 	};
 	
 	//timeText function
