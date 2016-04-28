@@ -37,10 +37,7 @@
         <div class="col-md-6"> 
             <div class="thumbnail">
 				<!--create loop-->
-					<img class="poster" ng-src="{{ movies[0].posters[0] }}">
-					<div ng-repeat="p in posters">
-						<img class="poster" ng-src="{{ movies[0].posters[p] }}">
-					</div>	
+					<img class="poster" ng-src="{{ movies[0].posters[0] }}">		
 					<div class="imageInfo">{{ movies[0].posterindex + " of " }} {{ movies[0].posters.length }}</div>
 					
 					<p class="title">{{ movies[0].title }} ({{ movies[0].country }})</p> 
