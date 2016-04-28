@@ -118,7 +118,7 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	//posterClick function
 	$scope.posterClick = function(index){
-		//$scope.movies{index].posterindex += 1;
+			$scope.movies[index].posterindex += 1;
 	};
 	
 	//timeText function
