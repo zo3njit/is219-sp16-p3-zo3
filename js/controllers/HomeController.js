@@ -88,6 +88,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
+	},
+	{
+	  title:	'Interstellar', 
+      iscore:	8.6,
+      rating:	'PG-13',
+      runtime:	169,
+      released:	new Date('2014', '10', '7'),
+      country:	'USA',
+      posters:	['img/interstellar.jpg','img/interstellar2.jpg','img/interstellar3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0816692',
+      website:	'http://www.interstellarmovie.net/',
+      likes:	4000,
+      dislikes:	101,
+      posterindex: 0	
+	},
+	{
+	  title:	'The Quick and the Dead', 
+      iscore:	6.4,
+      rating:	'R',
+      runtime:	107,
+      released:	new Date('1995', '1', '10'),
+      country:	'USA',
+      posters:	['img/tqtd.jpg','img/tqtd2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0114214',
+      website:	'https://en.wikipedia.org/wiki/The_Quick_and_the_Dead_(1995_film)',
+      likes:	180,
+      dislikes:	30,
+      posterindex: 0		
+	},
+	{
+	  title:	'2001: A Space Odyssey', 
+      iscore:	8.3,
+      rating:	'G',
+      runtime:	149,
+      released:	new Date('1968', '4', '15'),
+      country:	'USA',
+      posters:	['img/2kone.jpg','img/2kone2.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0062622',
+      website:	'http://www.kubrick2001.com/',
+      likes:	400,
+      dislikes:	30,
+      posterindex: 0
 	}
 	
 	
@@ -117,13 +159,11 @@ app.controller('HomeController', ['$scope', function($scope) {
 	};
 	
 	//posterClick function
-	$scope.posterClick = function(index){
-		
+	$scope.posterClick = function(index){		
 		if($scope.movies[index].posterindex + 1 < $scope.movies[index].posters.length){
 			$scope.movies[index].posterindex += 1;
 		}else if($scope.movies[index].posterindex + 1 == $scope.movies[index].posters.length){
 			$scope.movies[index].posterindex = 0;
-			
 		}
 	};
 	
