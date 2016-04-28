@@ -74,9 +74,9 @@ body {
     line-height: 80px;
     text-align: center;
     width: 80px;
-    position: relative;
-    bottom: 850px;
-    left: 420px;
+    position: absolute;
+    top: 50px;
+    right: 25px;
 	border-radius: 50%;
 }
 
